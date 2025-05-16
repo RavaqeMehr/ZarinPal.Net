@@ -38,14 +38,18 @@ public partial class ZarinPalClient
     {
         var response = await httpClient.SendAsync(request);
         var responseString = await response.Content.ReadAsStringAsync();
+#if DEBUG
+        var path = request.RequestUri!.ToString().Split("/").Last();
+        Console.WriteLine($"{path}: ===============");
+        Console.WriteLine(responseString);
+        Console.WriteLine("========================");
+#endif
 
         ZarinPalResult<T> result = DeserializeFromJson<ZarinPalResult<T>>(responseString)!;
 
-        if (!response.IsSuccessStatusCode || result.Errors.Length > 0)
+        if (!response.IsSuccessStatusCode || result.Errors is { })
         {
-            throw new Exception(
-                string.Join("\n", result.Errors.Select(x => $"{x.Message} ({x.Code})").ToArray())
-            );
+            throw new Exception($"{result.Errors!.Message} ({result.Errors!.Code})");
         }
 
         return result.Data!;
