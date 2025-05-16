@@ -1,0 +1,17 @@
+{
+  "name": "zarinpal-net",
+  "version": "1.0.0",
+  "private": true,
+  "resolutions": {
+    "nth-check": "^3.0.1"
+  },
+  "scripts": {
+    "sample": "cd Sample && dotnet run && cd ..",
+    "build": "dotnet build ZarinPal.Net\\ZarinPal.Net.csproj -c Release -f net9.0",
+    "pack-nuget": "yarn build && dotnet pack ZarinPal.Net\\ZarinPal.Net.csproj",
+    "nuget": "dotnet nuget push ZarinPal.Net\\bin\\Release\\ZarinPal.Net.*.nupkg --source https://api.nuget.org/v3/index.json --skip-duplicate"
+  },
+  "dependencies": {
+    "debounce": "^2.2.0"
+  }
+}
