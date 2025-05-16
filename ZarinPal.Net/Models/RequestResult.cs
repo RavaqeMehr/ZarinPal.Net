@@ -8,9 +8,3 @@ public class RequestResult
     public FeeType FeeType { get; set; }
     public int Fee { get; set; }
 }
-
-public enum FeeType
-{
-    Merchant,
-    Payer
-}
