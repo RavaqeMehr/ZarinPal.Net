@@ -16,7 +16,8 @@ public class RequestRequest
         string description,
         string? mobile = null,
         string? email = null,
-        string? orderId = null
+        string? orderId = null,
+        string? onlyThisCardPan = null
     )
     {
         Amount = amount;
@@ -34,6 +35,10 @@ public class RequestRequest
         if (orderId is not null)
         {
             Metadata.Add("order_id", orderId);
+        }
+        if (onlyThisCardPan is not null)
+        {
+            Metadata.Add("card_pan", onlyThisCardPan);
         }
     }
 
