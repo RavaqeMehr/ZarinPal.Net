@@ -7,5 +7,5 @@ public class RequestResult
     public string Authority { get; set; } = default!;
     public FeeType FeeType { get; set; }
     public int Fee { get; set; }
-    public RequestWage[]? Wages { get; set; }
+    public Wage[]? Wages { get; set; }
 }
