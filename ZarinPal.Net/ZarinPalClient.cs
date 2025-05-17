@@ -9,13 +9,20 @@ namespace ZarinPal.Net;
 public partial class ZarinPalClient
 {
     internal readonly string merchantId;
-    internal readonly string callbackUrl;
     internal readonly bool sandBox;
     internal readonly string baseUrl;
+    public string AppBaseUrl { get; set; }
+    public string CallbackPath { get; set; }
+    internal readonly string callbackUrl;
 
     private readonly HttpClient httpClient;
 
-    public ZarinPalClient(string merchantId, string callbackUrl, bool sandBox = false)
+    public ZarinPalClient(
+        string merchantId,
+        string appBaseUrl,
+        string callbackPath,
+        bool sandBox = false
+    )
     {
         baseUrl = $"https://{(sandBox ? "sandbox" : "payment")}.zarinpal.com/";
         httpClient = new()
@@ -30,7 +37,9 @@ public partial class ZarinPalClient
             }
         };
         this.merchantId = merchantId;
-        this.callbackUrl = callbackUrl;
+        AppBaseUrl = appBaseUrl;
+        CallbackPath = callbackPath;
+        callbackUrl = $"{appBaseUrl}/{callbackPath}".Replace("//", "/").Replace("//", "/");
         this.sandBox = sandBox;
     }
 
