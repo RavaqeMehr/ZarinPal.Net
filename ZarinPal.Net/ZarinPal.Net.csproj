@@ -4,6 +4,30 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>ZarinPal.Net</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Moqavem</Authors>
+    <Company>RavaqeMehr</Company>
+    <Product>ZarinPal.Net</Product>
+    <PackRelease>true</PackRelease>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>ZarinPal;pay</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright © ZarinPal.Net 2025</Copyright>
+    <PackageProjectUrl>https://github.com/RavaqeMehr/ZarinPal.Net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RavaqeMehr/ZarinPal.Net</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>ZarinPal.png</PackageIcon>
   </PropertyGroup>
+
+   <ItemGroup>
+    <None Include="../ZarinPal.png" Pack="true" PackagePath="/" />
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.0" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
 </Project>
