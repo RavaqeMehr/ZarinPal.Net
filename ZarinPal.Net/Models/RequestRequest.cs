@@ -1,5 +1,3 @@
-using System.Text.Json.Serialization;
-
 namespace ZarinPal.Net;
 
 public class RequestRequest
@@ -11,6 +9,7 @@ public class RequestRequest
 
     public string Description { get; set; } = "";
     public Dictionary<string, string> Metadata { get; set; } = default!;
+    public RequestWage[]? Wages { get; set; }
 
     public RequestRequest(
         int amount,
