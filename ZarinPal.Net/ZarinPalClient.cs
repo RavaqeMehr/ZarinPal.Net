@@ -8,14 +8,14 @@ namespace ZarinPal.Net;
 
 public partial class ZarinPalClient
 {
-    internal readonly string merchentId;
+    internal readonly string merchantId;
     internal readonly string callbackUrl;
     internal readonly bool sandBox;
     internal readonly string baseUrl;
 
     private readonly HttpClient httpClient;
 
-    public ZarinPalClient(string merchentId, string callbackUrl, bool sandBox = false)
+    public ZarinPalClient(string merchantId, string callbackUrl, bool sandBox = false)
     {
         baseUrl = $"https://{(sandBox ? "sandbox" : "payment")}.zarinpal.com/";
         httpClient = new()
@@ -25,11 +25,11 @@ public partial class ZarinPalClient
             {
                 {
                     "User-Agent",
-                    $"BaleBot.Net/{Assembly.GetCallingAssembly().GetName().Version?.ToString(3)}"
+                    $"ZarinPal.Net/{Assembly.GetCallingAssembly().GetName().Version?.ToString(3)}"
                 }
             }
         };
-        this.merchentId = merchentId;
+        this.merchantId = merchantId;
         this.callbackUrl = callbackUrl;
         this.sandBox = sandBox;
     }

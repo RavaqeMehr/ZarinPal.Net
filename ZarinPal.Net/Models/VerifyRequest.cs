@@ -8,6 +8,6 @@ public class VerifyRequest(int amount, string authority)
 
     public void Populate(ZarinPalClient zarinPal)
     {
-        MerchantId = zarinPal.merchentId;
+        MerchantId = zarinPal.merchantId;
     }
 }

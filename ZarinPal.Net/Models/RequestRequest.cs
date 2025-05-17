@@ -46,7 +46,7 @@ public class RequestRequest
 
     public void Populate(ZarinPalClient zarinPal)
     {
-        MerchantId = zarinPal.merchentId;
+        MerchantId = zarinPal.merchantId;
         CallbackUrl = zarinPal.callbackUrl;
     }
 }
