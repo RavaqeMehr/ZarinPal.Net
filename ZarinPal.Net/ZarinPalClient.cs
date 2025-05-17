@@ -47,9 +47,9 @@ public partial class ZarinPalClient
 
         ZarinPalResult<T> result = DeserializeFromJson<ZarinPalResult<T>>(responseString)!;
 
-        if (!response.IsSuccessStatusCode || result.Errors is { })
+        if (!response.IsSuccessStatusCode)
         {
-            throw new Exception($"{result.Errors!.Message} ({result.Errors!.Code})");
+            throw new Exception(result.Errors.ToString());
         }
 
         return result.Data!;
