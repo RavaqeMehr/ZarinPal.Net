@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace ZarinPal.Net;
 
 public class RequestRequest
@@ -5,7 +7,12 @@ public class RequestRequest
     public string MerchantId { get; set; } = default!;
     public string CallbackUrl { get; set; } = default!;
     public int Amount { get; set; }
-    public string Currency { get; set; } = "IRR";
+
+    [JsonIgnore]
+    public ZarinPalCurrency Currency { get; set; } = ZarinPalCurrency.IRR;
+
+    [JsonPropertyName("currency"), JsonInclude]
+    private string CurrencyStr => Currency.ToString();
 
     public string Description { get; set; } = "";
     public Dictionary<string, string> Metadata { get; set; } = default!;
