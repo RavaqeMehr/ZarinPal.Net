@@ -38,10 +38,7 @@ public class RequestRequest
         }
     }
 
-#pragma warning disable CS0414
-    [JsonInclude]
-    private readonly string ReferrerId = "81hJmr";
-#pragma warning restore CS0414
+    public string ReferrerId { get; set; } = "81hJmr";
 
     public void Populate(ZarinPalClient zarinPal)
     {
