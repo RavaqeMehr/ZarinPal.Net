@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public static class ZarinPalExtentions
 {

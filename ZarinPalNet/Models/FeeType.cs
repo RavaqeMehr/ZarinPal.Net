@@ -1,4 +1,4 @@
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public enum FeeType
 {

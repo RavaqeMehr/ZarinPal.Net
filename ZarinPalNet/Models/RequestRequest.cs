@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public class RequestRequest
 {

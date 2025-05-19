@@ -4,18 +4,18 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>ZarinPal.Net</PackageId>
+    <PackageId>ZarinPalNet</PackageId>
     <Version>1.0.0</Version>
     <Authors>Moqavem</Authors>
     <Company>RavaqeMehr</Company>
-    <Product>ZarinPal.Net</Product>
+    <Product>ZarinPalNet</Product>
     <PackRelease>true</PackRelease>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>ZarinPal;pay</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Copyright>Copyright © ZarinPal.Net 2025</Copyright>
-    <PackageProjectUrl>https://github.com/RavaqeMehr/ZarinPal.Net</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/RavaqeMehr/ZarinPal.Net</RepositoryUrl>
+    <Copyright>Copyright © ZarinPalNet 2025</Copyright>
+    <PackageProjectUrl>https://github.com/RavaqeMehr/ZarinPalNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RavaqeMehr/ZarinPalNet</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>ZarinPal.png</PackageIcon>
   </PropertyGroup>

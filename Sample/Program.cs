@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using ZarinPal.Net;
+using ZarinPalNet;
 
 var builder = WebApplication.CreateBuilder(args);
 

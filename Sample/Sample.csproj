@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ZarinPal.Net\ZarinPal.Net.csproj" />
+    <ProjectReference Include="..\ZarinPalNet\ZarinPalNet.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Text.Json.Serialization;
 
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public class UnVerifiedResult
 {

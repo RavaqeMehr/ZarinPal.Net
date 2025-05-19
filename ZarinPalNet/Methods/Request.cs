@@ -1,19 +1,19 @@
 using System.Net.Http.Json;
 
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public partial class ZarinPalClient
 {
-    public async Task<VerifyResult> Verify(VerifyRequest parameters)
+    public async Task<RequestResult> Request(RequestRequest parameters)
     {
         parameters.Populate(this);
 
         HttpRequestMessage requestMessage =
-            new(HttpMethod.Post, "pg/v4/payment/verify.json")
+            new(HttpMethod.Post, "pg/v4/payment/request.json")
             {
                 Content = JsonContent.Create(parameters, options: jsonOption)
             };
 
-        return await SendRequest<VerifyResult>(requestMessage);
+        return await SendRequest<RequestResult>(requestMessage);
     }
 }

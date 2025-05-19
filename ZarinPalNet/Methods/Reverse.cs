@@ -1,6 +1,6 @@
 using System.Net.Http.Json;
 
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public partial class ZarinPalClient
 {

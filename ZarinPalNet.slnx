@@ -5,5 +5,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="Sample/Sample.csproj" />
-  <Project Path="ZarinPal.Net/ZarinPal.Net.csproj" />
+  <Project Path="ZarinPalNet/ZarinPalNet.csproj" />
 </Solution>

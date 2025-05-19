@@ -1,17 +1,17 @@
-# ZarinPal.Net
+# ZarinPalNet
 
 ## نصب
 
-برای استفاده از `ZarinPal.Net` در پروژه خود، بسته نیوگت را اضافه کنید:
+برای استفاده از `ZarinPalNet` در پروژه خود، بسته نیوگت را اضافه کنید:
 
 ```bash
-dotnet add package ZarinPal.Net
+dotnet add package ZarinPalNet
 ```
 
 یا در کنسول مدیریت بسته نیوگت:
 
 ```bash
-Install-Package ZarinPal.Net
+Install-Package ZarinPalNet
 ```
 
 ## مثال

@@ -1,4 +1,4 @@
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public class ReverseRequest(string authority)
 {

@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public class ZarinPalResult<T>
 {

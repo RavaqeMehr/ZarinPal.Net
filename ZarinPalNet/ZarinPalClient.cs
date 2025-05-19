@@ -4,7 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Unicode;
 
-namespace ZarinPal.Net;
+namespace ZarinPalNet;
 
 public partial class ZarinPalClient
 {
@@ -32,7 +32,7 @@ public partial class ZarinPalClient
             {
                 {
                     "User-Agent",
-                    $"ZarinPal.Net/{Assembly.GetCallingAssembly().GetName().Version?.ToString(3)}"
+                    $"ZarinPalNet/{Assembly.GetCallingAssembly().GetName().Version?.ToString(3)}"
                 }
             }
         };
